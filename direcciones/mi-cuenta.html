@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a2b">
+  <meta name="description" content="Acceso de demostración a la cuenta de Distrigom.">
+  <title>Mi cuenta | Distrigom</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <script src="../scripts/site.js" defer></script>
+</head>
+<body class="account-body">
+  <main class="account-page">
+    <section class="account-form-panel" aria-labelledby="account-title">
+      <a class="account-back" href="../index.html"><span aria-hidden="true">←</span> Volver a Distrigom</a>
+      <div class="account-form-wrap">
+        <a class="account-logo" href="../index.html" aria-label="Distrigom, inicio"><img src="../imagenes/logo-300x95.png" alt="Distrigom, artículos de caucho"></a>
+        <p class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> ÁREA DE CLIENTES</p>
+        <h1 id="account-title">¡Bienvenido!</h1>
+        <p class="account-lead">Iniciá sesión para estar al día con tus pedidos.</p>
+        <form class="account-form" data-demo-login>
+          <label for="account-user">Usuario</label>
+          <input id="account-user" name="username" type="text" placeholder="Tu usuario" autocomplete="username" required>
+          <div class="account-password-label"><label for="account-password">Contraseña</label><button type="button" class="account-text-button" data-recover-password>¿Olvidaste la contraseña?</button></div>
+          <div class="password-field"><input id="account-password" name="password" type="password" placeholder="Tu contraseña" autocomplete="current-password" required><button type="button" data-toggle-password aria-label="Mostrar contraseña" aria-pressed="false">Mostrar</button></div>
+          <button class="button button-account" type="submit">Iniciar sesión <span aria-hidden="true">→</span></button>
+          <a class="button button-guest" href="productos.html">Continuar como invitado <span aria-hidden="true">↗</span></a>
+          <p class="account-status" data-account-status role="status" tabindex="-1" hidden></p>
+        </form>
+        <p class="account-safety">Esta es una demo visual sin conexión al sistema de pedidos. No ingreses una contraseña real; tus datos no se envían ni se guardan.</p>
+      </div>
+      <footer class="account-footer"><span>© <span data-year></span> Distrigom · Demo visual</span><a href="contactos.html">Contacto</a></footer>
+    </section>
+    <aside class="account-info">
+      <div class="account-pattern" aria-hidden="true"></div>
+      <div class="account-info-card">
+        <span class="account-info-kicker"><span class="status-dot"></span> DISTRIGOM · ARTÍCULOS DE CAUCHO</span>
+        <h2>Una historia de<br><em>experiencia y compromiso.</em></h2>
+        <p>Distribuimos artículos y mangueras de caucho para el mercado automotor. Acompañamos cada búsqueda con atención cercana y asesoramiento.</p>
+        <div class="account-info-links">
+          <a href="tel:+541142833366"><span class="account-info-icon" aria-hidden="true"><img src="../imagenes/iconos/telefono.png" alt=""></span><span><small>Teléfono</small><strong>(011) 4283-3366</strong></span></a>
+          <a href="mailto:info@distrigom.com.ar"><span class="account-info-icon" aria-hidden="true">✉</span><span><small>Correo electrónico</small><strong>info@distrigom.com.ar</strong></span></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Felipe+Boero+786%2C+Lomas+de+Zamora%2C+Buenos+Aires" target="_blank" rel="noopener noreferrer"><span class="account-info-icon" aria-hidden="true"><img src="../imagenes/iconos/ubicacion.png" alt=""></span><span><small>Dirección</small><strong>Felipe Boero 786, Lomas de Zamora, Buenos Aires</strong></span></a>
+        </div>
+        <img class="account-yaco-mark" src="../imagenes/80-yaco.png" alt="YACO, 80 años creciendo juntos">
+      </div>
+      <a class="account-info-home" href="../index.html">DISTRIGOM <span>ARTÍCULOS DE CAUCHO</span></a>
+    </aside>
+  </main>
+</body>
+</html>

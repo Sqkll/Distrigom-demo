@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a2b">
+  <meta name="description" content="Explorá el catálogo Distrigom de mangueras, caños curvos y artículos de caucho. Buscá por vehículo, categoría o medida.">
+  <title>Productos | Distrigom</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <script src="../scripts/catalog-data.js" defer></script>
+  <script src="../scripts/site.js" defer></script>
+</head>
+<body>
+  <header class="catalog-app-header">
+    <div class="container catalog-app-header-inner">
+      <a class="brand catalog-app-brand" href="../index.html" aria-label="Distrigom, inicio"><span class="brand-mark" aria-hidden="true">D</span><span class="brand-copy"><strong>DISTRIGOM</strong><small>ARTÍCULOS DE CAUCHO</small></span></a>
+      <form class="catalog-search" data-search-form data-products-url="productos.html" role="search"><label class="sr-only" for="header-search">Buscar por producto, vehículo o código YACO</label><span aria-hidden="true">⌕</span><input id="header-search" name="q" type="search" placeholder="Producto, vehículo o código..." autocomplete="off"><button type="submit" aria-label="Buscar">→</button></form>
+      <nav class="catalog-app-links" aria-label="Enlaces de Distrigom">
+        <a class="catalog-app-whatsapp" href="https://wa.me/1151101561" target="_blank" rel="noopener noreferrer"><img src="../imagenes/iconos/whatsapp.png" alt=""><span>WhatsApp</span></a>
+        <a href="../index.html"><img src="../imagenes/iconos/web.png" alt=""><span>Inicio</span></a>
+        <a href="mi-cuenta.html"><img src="../imagenes/iconos/usuario.png" alt=""><span>Mi cuenta</span></a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="catalog-section"><div class="container">
+      <div class="catalog-heading"><div><p class="catalog-eyebrow">DISTRIGOM · ARTÍCULOS DE CAUCHO</p><h1>Catálogo de productos</h1><p>Encontrá el repuesto por nombre, aplicación o código.</p></div><span class="catalog-count" aria-live="polite"><strong data-product-count>0</strong> productos</span></div>
+      <a class="catalog-brands" href="https://yaco-sa.com/productos/" target="_blank" rel="noopener noreferrer" aria-label="Conocé más productos de YACO"><img src="../imagenes/proveedores_yaco_1184x166.png" alt="Marcas y fabricantes de artículos de caucho"></a>
+      <div class="catalog-toolbar">
+        <div class="catalog-toolbar-actions">
+          <div class="view-switch" role="group" aria-label="Vista del catálogo"><button type="button" data-view="list" aria-pressed="true" aria-label="Vista de lista"><span aria-hidden="true">☷</span><span>Lista</span></button><button type="button" data-view="grid" aria-pressed="false" aria-label="Vista de cuadrícula"><span aria-hidden="true">▦</span><span>Cuadrícula</span></button></div>
+          <div class="catalog-toolbar-right">
+            <button class="quote-cart-trigger" type="button" data-quote-open aria-label="Abrir mi lista de cotización"><span aria-hidden="true">＋</span><span>Mi lista</span><span class="quote-cart-badge" data-quote-count aria-live="polite">0</span></button>
+          <details class="catalog-filter-panel">
+            <summary><span aria-hidden="true">☷</span> Filtrar</summary>
+            <div class="catalog-filters">
+              <label>Marca<select data-brand-filter aria-label="Filtrar por marca"><option value="">Todas las marcas</option></select></label>
+              <label>Vehículo/aplicación<select data-vehicle-filter aria-label="Filtrar por vehículo o aplicación"><option value="">Todos los vehículos</option></select></label>
+              <label>Rubro<select data-category-filter aria-label="Filtrar por rubro"><option value="">Todos los rubros</option></select></label>
+              <label>Medida<select data-measure-filter aria-label="Filtrar por medida"><option value="">Todas las medidas</option></select></label>
+              <label>Ordenar<select data-sort-products aria-label="Ordenar productos"><option value="original">Orden original</option><option value="name">Nombre A–Z</option><option value="name-desc">Nombre Z–A</option></select></label>
+              <button class="clear-filters" type="button" data-clear-filters>Limpiar filtros</button>
+            </div>
+          </details>
+          </div>
+        </div>
+      </div>
+      <p class="catalog-note" data-query-label aria-live="polite"></p>
+      <div class="product-grid" data-product-grid></div>
+      <p class="catalog-note">Las fotos pueden ser referenciales. Agregá artículos a “Mi lista” para preparar una consulta por WhatsApp; no se muestran precios ni disponibilidad y esta demo no registra pedidos.</p>
+      <div class="catalog-contact"><div><h2>¿No encontrás lo que buscás?</h2><p>Escribinos con el código o los datos de tu vehículo y te orientamos.</p></div><a class="button button-accent" href="contactos.html">Hacer una consulta <span aria-hidden="true">→</span></a></div>
+    </div></section>
+  </main>
+  <dialog class="product-dialog" data-product-dialog aria-labelledby="product-dialog-title">
+    <div class="product-dialog-panel">
+      <button class="product-dialog-close" type="button" data-dialog-close aria-label="Cerrar características">×</button>
+      <div class="product-dialog-image"><img data-dialog-image alt=""><span class="catalog-image-note" data-dialog-image-note hidden>Foto referencial</span></div>
+      <div class="product-dialog-content">
+        <p class="product-dialog-category" data-dialog-category></p>
+        <h2 id="product-dialog-title" data-dialog-title></h2>
+        <p class="catalog-product-code" data-dialog-code hidden></p>
+        <p class="product-dialog-description" data-dialog-description></p>
+        <dl class="product-dialog-specs">
+          <div><dt>Marca</dt><dd data-dialog-brand></dd></div>
+          <div><dt>Vehículo / aplicación</dt><dd data-dialog-vehicle></dd></div>
+          <div><dt>Rubro</dt><dd data-dialog-spec-category></dd></div>
+          <div><dt>Medida publicada</dt><dd data-dialog-measure></dd></div>
+        </dl>
+        <p class="product-dialog-note">Compatibilidad y disponibilidad sujetas a confirmación.</p>
+        <div class="product-dialog-actions"><button class="catalog-add-to-quote" type="button" data-dialog-add>Agregar a Mi lista <span aria-hidden="true">＋</span></button><a class="button button-accent" data-dialog-contact target="_blank" rel="noopener noreferrer">Consultar este producto <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="quote-dialog" data-quote-dialog aria-labelledby="quote-dialog-title">
+    <div class="quote-dialog-panel">
+      <header class="quote-dialog-header"><div><p class="catalog-eyebrow">DISTRIGOM · CONSULTA</p><h2 id="quote-dialog-title">Mi lista de productos</h2></div><button class="product-dialog-close" type="button" data-quote-close aria-label="Cerrar lista">×</button></header>
+      <p class="quote-dialog-intro">Elegí cantidades y prepará un mensaje para consultar. No se envía nada hasta que confirmes en WhatsApp.</p>
+      <p class="quote-cart-status" data-quote-status role="status">La lista queda guardada en este navegador; no se envía ningún pedido.</p>
+      <div class="quote-cart-items" data-quote-items></div>
+      <p class="quote-cart-empty" data-quote-empty>Tu lista está vacía. Agregá productos desde el catálogo.</p>
+      <footer class="quote-dialog-footer"><button class="clear-filters" type="button" data-quote-clear>Vaciar lista</button><a class="button button-accent" data-quote-send target="_blank" rel="noopener noreferrer" hidden>Preparar consulta por WhatsApp <span aria-hidden="true">↗</span></a></footer>
+    </div>
+  </dialog>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand brand-footer" href="../index.html"><span class="brand-mark" aria-hidden="true">D</span><span class="brand-copy"><strong>DISTRIGOM</strong><small>ARTÍCULOS DE CAUCHO</small></span></a><p>Distribución de artículos de caucho para el mercado automotor.</p><div class="footer-links"><a href="productos.html">Productos</a><a href="caracteristicas.html">Nosotros</a><a href="mi-cuenta.html">Mi cuenta</a><a href="contactos.html">Contacto</a></div><a class="footer-phone" href="tel:+541142833366"><img src="../imagenes/iconos/telefono.png" alt=""> (011) 4283-3366</a></div><div class="container footer-bottom"><span>© <span data-year></span> Distrigom · Demo visual</span><span>La información de productos está sujeta a confirmación.</span></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/1151101561?text=Hola%2C%20quiero%20hacer%20una%20consulta%20sobre%20un%20producto." target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp"><img class="whatsapp-float-icon" src="../imagenes/iconos/whatsapp.png" alt=""><span>Consultar</span></a>
+</body>
+</html>
